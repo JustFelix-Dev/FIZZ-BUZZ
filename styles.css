@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color:lightcoral;
+}
+.container{
+    background-color: rgb(231, 161, 161);
+    padding: 5rem;
+    width: 80%;
+    height: 60%;
+}
+.form{
+    border: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 80%;
+    height: 2rem;
+}
+.mybutton{
+    display: flex;
+    justify-content: center
+    ;align-items: center;
+}
+button{
+    color: white;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background-color: rgb(109, 80, 80);
+    padding: .4rem 1rem;
+    border-radius: 20px;
+    margin-block: 1rem;
+}
+p{
+    margin-top: 1rem ;
+    font-weight: bold;
+}
+p > span{
+    font-weight: 550;
+}
+
+.result-wrapper{
+margin-block: 1rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.result{
+    text-align: center;
+    line-height: 50px;
+    width: 40%;
+    height: 50px;
+    background-color: rgb(243, 229, 229);
+}

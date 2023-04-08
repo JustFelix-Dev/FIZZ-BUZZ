@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz-Buzz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./JS.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+         <div class="form">
+             <input type="number" name="" id="myInput"> <br>
+             <div class="mybutton">
+                 <button onclick="fizzBuzz()">Check Fizz-Buzz</button>
+             </div>
+         </div>
+          <p>A simple JavaScript Logic that output <span> "FIZZ" </span> if a number is divsible by <span>3</span>, outputs <span>"BUZZ"</span> if a number is divisible by <span>5</span> and lastly, outputs <span>"FIZZ BUZZ"</span> if it is divisible by <span>3</span> and <span>5</span>. </p>
+          <div class="result-wrapper">
+              <div class="result" id="result">
+            </div>
+          </div>
+    </div>
+    <script>
+        function fizzBuzz(){
+
+              if(myInput.value ==''){
+                  result.innerHTML = "Please Check your Input!" 
+              }else if(myInput.value%3==0 && myInput.value%5==0){
+                 result.innerHTML = "FIZZ BUZZ"
+                  }
+                  else if(myInput.value%3==0){
+                 result.innerHTML = "FIZZ"
+                  }
+                  else if(myInput.value%5==0){
+                result.innerHTML = "BUZZ"
+                  }
+                  else{
+                result.innerHTML = "Invalid Number"
+                  }
+              }
+
+    </script>
+</body>
+</html>
